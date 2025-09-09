@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="src/output.css" rel="stylesheet">
+</head>
+<body class="bg-[#f5f0e6]">
+    <div class="mt-[80px] mx:mt-[35px]">
+        <div class="flex justify-center items-center flex-col gap-[20px]">
+            <h1 class="text-[40px] mx:text-[25px] font-serif text-[#573b30] font-medium "  style="transform: scaleY(0.9); letter-spacing: 1px;">SHUKUROV SAIDAKHMAD</h1>
+            <h4 class="text-[20px] text-[#573b30] font-serif " style="letter-spacing: 1px;">&</h4>
+            <h1 class="text-[40px] mx:text-[25px] font-serif text-[#573b30] font-medium "  style="transform: scaleY(0.9); letter-spacing: 1px;">YOROVA SHAKHNOZA</h1>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-[16px] mt-[20px]">
+            <h1 class="text-[#472d23] text-[20px]" style="transform: scaleY(1.1);">Приглашаем вас на нашу свадьбу</h1>
+            <h1 class="text-[#472d23] text-[30px]" style="margin-top: 13px;">27 сентября 2025</h1>
+        </div>
+        <div class="flex justify-center mt-[20px]">
+            <img class="w-[530px] h-[340px] mx:w-[350px] mx:h-[230px] rounded-[13px]" src="https://images.zola.com/0d5eb69e-53e2-43a4-b471-92afcb525655?h=1000" alt="">
+        </div>
+        <div>
+            <h1 class="text-[30px] font-serif text-[#472d23] text-center mt-[55px]">Детали мероприятие:</h1>
+            <div class="flex justify-center items-center flex-col mt-[18px]">
+            <div class="flex items-center gap-[13px] px-[20px] w-[550px] h-[70px] mx:h-[60px] mx:w-[390px] bg-[white] rounded-[14px]">
+            <i class="fa-solid fa-location-dot text-[20px] text-red-600"></i>
+            <h1 class="text-[22px] text-[#472d23] font-Ariel">Ресторан << Хаёт >>, Душанбе</h1>
+            </div>
+            <div  class="flex items-center gap-[13px] px-[20px] w-[550px] h-[70px] mx:h-[60px] mx:w-[390px] bg-[white] rounded-[14px] mt-[10px]">
+                <i class="fa-solid fa-clock text-[20px] text-gray-500"></i>
+                <h1 class="text-[22px] text-[#472d23] font-Ariel">Начало в 18:00</h1>
+            </div>
+            <div class="mt-[20px]">
+                <a href="https://maps.app.goo.gl/M2DJbLNAGfXr42Lr6" target="_blank" rel="noopener noreferrer"><h1 class="text-[20px] px-[20px] mt-[10px] rounded-[13px] text-[white] py-[10px] bg-red-500">Показать ресторан на карте?</h1></a>
+            </div>
+            </div>
+        </div>
+        <div class="mt-[60px] flex flex-col justify-center items-center gap-[20px]">
+            <h1 class="text-2xl mx:text-[30px] font-serif text-[#472d23]">Потвердите участие:</h1>
+            <div>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSck0Xlc0cyTYe06G3lOr2PkRULCcuMr55oWmtd4TPaj4M4Sew/viewform?embedded=true" width="400px" height="500px">Загрузка…</iframe>
+            </div>
+        </div>
+        <div class="bg-[#f0ede8] text-[#4b3f2f] p-6 rounded-xl  shadow-lg max-w-xl mx-auto text-center space-y-4  mt-[50px]">
+      <h2 class="text-[20px] mx:text-[13px] tracking-widest uppercase">До нашей свадьбы осталось:</h2>
+      <div id="countdown" class="text-[34px] mx:text-[19px] font-semibold tracking-wider"></div>
+    </div>
+    </div>
+<script>
+  const targetDate = new Date("2025-09-27T18:00:00");
+
+  function updateCountdown() {
+    const now = new Date();
+    const diff = targetDate - now;
+
+    if (diff <= 0) {
+      document.getElementById("countdown").innerText = "Свадьба уже началась! Спешите";
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+
+    document.getElementById("countdown").innerText =
+      `${days} дней ${hours} ч ${minutes} мин ${seconds} сек`;
+  }
+
+  setInterval(updateCountdown, 1000);
+  updateCountdown();
+</script>
+</body>
+</html>
