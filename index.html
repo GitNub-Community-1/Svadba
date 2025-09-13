@@ -3,43 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Приглашение</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/6654/6654165.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="src/output.css" rel="stylesheet">
 </head>
 <body class="bg-[#f5f0e6]">
     <div class="mt-[80px] mx:mt-[35px]">
-        <div class="flex justify-center items-center flex-col gap-[20px]">
+        <div data-aos="flip-up"  class="flex justify-center items-center flex-col gap-[20px]">
             <h1 class="text-[40px] mx:text-[25px] font-serif text-[#573b30] font-medium "  style="transform: scaleY(0.9); letter-spacing: 1px;">САИДАХМАД</h1>
             <h4 class="text-[20px] text-[#573b30] font-serif " style="letter-spacing: 1px;">&</h4>
-            <h1 class="text-[40px] mx:text-[25px] font-serif text-[#573b30] font-medium "  style="transform: scaleY(0.9); letter-spacing: 1px;">ШАХНОЗА</h1>
+            <h1   class="text-[40px] mx:text-[25px] font-serif text-[#573b30] font-medium "  style="transform: scaleY(0.9); letter-spacing: 1px;">ШАХНОЗА</h1>
         </div>
-        <div class="flex flex-col justify-center items-center gap-[16px] mt-[20px]">
+        <div data-aos="zoom-in" class="flex flex-col justify-center items-center gap-[16px] mt-[20px]">
             <h1 class="text-[#472d23] text-[20px]" style="transform: scaleY(1.1);">Приглашаем вас на нашу свадьбу</h1>
             <h1 class="text-[#472d23] text-[30px]" style="margin-top: 13px;">27 сентября</h1>
         </div>
-        <div class="flex justify-center mt-[20px]">
-            <img class="w-[530px] h-[340px] mx:w-[350px] mx:h-[230px] rounded-[13px]" src="https://images.zola.com/0d5eb69e-53e2-43a4-b471-92afcb525655?h=1000" alt="">
+        <div  data-aos = "fade-right" class="flex justify-center mt-[20px]">
+            <!-- <img class="w-[530px] h-[340px] mx:w-[350px] mx:h-[230px] rounded-[13px]" src="https://images.zola.com/0d5eb69e-53e2-43a4-b471-92afcb525655?h=1000" alt=""> -->
+             <img class="w-[530px] h-[340px] mx:w-[350px] mx:h-[230px] rounded-[13px]" src="/phot/л.png" alt="">
         </div>
         <div>
+          <div data-aos="zoom-in">
             <h1 class="text-[30px] font-serif text-[#472d23] text-center mt-[55px]">Детали мероприятия:</h1>
+          </div>
             <div class="flex justify-center items-center flex-col mt-[18px]">
-            <div class="flex items-center gap-[13px] px-[20px] w-[550px] h-[70px] mx:h-[60px] mx:w-[390px] bg-[white] rounded-[14px]">
+            <div data-aos="fade-left" class="flex items-center gap-[13px] px-[20px] w-[550px] h-[70px] mx:h-[60px] mx:w-[390px] bg-[white] rounded-[14px]">
             <i class="fa-solid fa-location-dot text-[20px] text-red-600"></i>
             <h1 class="text-[22px] text-[#472d23] font-Ariel">Ресторан «Панҷруд», Душанбе</h1>
             </div>
-            <div  class="flex items-center gap-[13px] px-[20px] w-[550px] h-[70px] mx:h-[60px] mx:w-[390px] bg-[white] rounded-[14px] mt-[10px]">
+            <div data-aos="fade-left"  class="flex items-center gap-[13px] px-[20px] w-[550px] h-[70px] mx:h-[60px] mx:w-[390px] bg-[white] rounded-[14px] mt-[10px]">
                 <i class="fa-solid fa-clock text-[20px] text-gray-500"></i>
                 <h1 class="text-[22px] text-[#472d23] font-Ariel">Начало в 18:00</h1>
             </div>
-            <div class="mt-[20px]">
+            <div data-aos="fade-left" class="mt-[20px]">
                 <a href="https://yandex.ru/maps/org/190977320353?si=96x2477x9gwvuqeneqv4hc462m" target="_blank" rel="noopener noreferrer"><h1 class="text-[20px] px-[20px] mt-[10px] rounded-[13px] text-[white] py-[10px] bg-red-500">Показать ресторан на карте?</h1></a>
             </div>
             </div>
         </div>
-        <div class="mt-[60px] flex flex-col justify-center items-center gap-[20px]">
+        <div data-aos="zoom-out" class="mt-[60px] flex flex-col justify-center items-center gap-[20px]">
             <h1 class="text-2xl mx:text-[30px] font-serif text-[#472d23]">Потвердите своё участие:</h1>
-            <div id="customForm" class="bg-[white] py-[50px] rounded-[15px] px-[80px]">
+            <div data-aos="flip-up" id="customForm" class="bg-[white] py-[50px] rounded-[15px] px-[80px]">
                 <input  type="text" class="rounded-[13px] px-[10px] py-[7px] ml-[-30px] bg-[#f5f0e6] " placeholder="Имя:" id="name" required><br><br>
                 <label class="mt-[25px] mb-[10px]">Вы придёте?</label><br>
                 <input class="mt-[10px]" type="radio" name="attending" value="Да" required> ✅ Да<br>
@@ -47,7 +52,7 @@
                 <button id="submitBtn" class="bg-red-500 rounded-[20px] px-[15px] py-[7px] text-[white]">Отправить</button>
             </div>
 
-            <div id="thankYouMessage" style="display:none; margin-top:20px; font-size:1.2rem; color:#4b3f2f;">
+            <div data-aos="flip-down" id="thankYouMessage" style="display:none; margin-top:20px; font-size:1.2rem; color:#4b3f2f;">
                 ✅ Спасибо за ваш ответ!
             </div>
 
@@ -55,7 +60,7 @@
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSck0Xlc0cyTYe06G3lOr2PkRULCcuMr55oWmtd4TPaj4M4Sew/viewform?embedded=true" width="400px" height="500px">Загрузка…</iframe>
             </div> -->
         </div>
-        <div class="bg-[#f0ede8] text-[#4b3f2f] p-6 rounded-xl  shadow-lg max-w-xl mx-auto text-center space-y-4  mt-[50px]">
+        <div  class="bg-[#f0ede8] text-[#4b3f2f] p-6 rounded-xl  shadow-lg max-w-xl mx-auto text-center space-y-4  mt-[50px]">
       <h2 class="text-[20px] mx:text-[13px] tracking-widest uppercase">До нашей свадьбы осталось:</h2>
       <div id="countdown" class="text-[34px] mx:text-[19px] font-semibold tracking-wider"></div>
     </div>
@@ -108,6 +113,10 @@
 
   setInterval(updateCountdown, 1000);
   updateCountdown();
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+      AOS.init();
 </script>
 </body>
 </html>
